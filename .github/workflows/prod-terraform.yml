@@ -58,6 +58,7 @@ env:
   ARM_CLIENT_SECRET: ${{ secrets.PROD_ARM_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{ secrets.PROD_ARM_SUBSCRIPTION_ID }}
   ARM_TENANT_ID: ${{ secrets.PROD_ARM_TENANT_ID }}
+  TF_VAR_env: ${{ secrets.TF_VAR_env }}
 
 jobs:
   terraform:
